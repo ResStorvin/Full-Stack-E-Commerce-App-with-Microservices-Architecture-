@@ -1,3 +1,6 @@
+"use client";
+
+import ProfileButton from "./ProfileButton";
 import Image from "next/image";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
@@ -34,12 +37,12 @@ const Navbar = () => {
           <Home className="w-4 h-4 text-gray-600" />
         </Link>
         <Bell className="w-4 h-4 text-gray-600" />
-        <ShoppingCartIcon />
+        <ShoppingCart className="w-4 h-4 text-gray-600" />
         <SignedOut>
           <SignInButton />
         </SignedOut>
         <SignedIn>
-          <UserButton />
+          <ProfileButton />
         </SignedIn>
       </div>
     </nav>
